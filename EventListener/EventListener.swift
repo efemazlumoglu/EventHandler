@@ -24,7 +24,7 @@ class EventListener {
     
     func thorAttack (information: Any?) {
         if let info = information as? String {
-            print("Thor is attackingggg")
+            print("BOOOOUUUUCCHHHHH")
             print(info)
         }
     }

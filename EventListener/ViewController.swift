@@ -9,15 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let trigger = EventTrigger()
+    let listener = EventListener()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let trigger = EventTrigger()
-        let listener = EventListener()
-        
-        listener.thorAttack(information: trigger)
+    }
+    
+    
+    @IBAction func thorAttack(_ sender: Any) {
+        listener.listenEvent(trigger: trigger)
         trigger.fire()
     }
-
-
+    
 }
 
